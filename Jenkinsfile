@@ -2,7 +2,6 @@ pipeline {
  agent any
    stages {
      stage('Deploy to astronomer') {
-       when { branch 'main' }
        steps {
          checkout scm  
          script {
